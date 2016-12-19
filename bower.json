@@ -1,0 +1,12 @@
+{
+  "name": "giosg-ui-toolkit",
+  "description": "Giosg UI Toolkit",
+  "main": "",
+  "license": "MIT",
+  "homepage": "https://github.com/giosg/ui-toolkit",
+  "ignore": [
+    "index.html",
+    "svg",
+    "node_modules"
+  ]
+}

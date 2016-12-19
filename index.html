@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+   <html style="overflow: scroll">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+      <title>Giosg UI Toolkit</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <link href="dist/ui-toolkit.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body class="giosg bg-page-background">
+      <div class="container">
+        <h1>Page background</h1>
+        <p>To get the same gradient background as this page just add <code>bg-page-background</code> to your container element </p>
+        <h1>Icons</h1>
+        <div style="font-size: 2em" class="row">
+          <div class="col-md-4">
+            <span class="giosg-icon giosg-condition-circle"></span>
+            <span class="mls"> giosg-condition-circle</span>
+          </div>
+          <div class="col-md-4">
+              <span class="giosg-icon giosg-goal-circle"></span>
+              <span class="mls"> giosg-goal-circle</span>
+          </div>
+          <div class="col-md-4">
+              <span class="giosg-icon giosg-room-circle"></span>
+              <span class="mls"> giosg-room-circle</span>
+          </div>
+          <div class="col-md-4">
+              <span class="giosg-icon giosg-target-circle"></span>
+              <span class="mls"> giosg-target-circle</span>
+          </div>
+          <div class="col-md-4">
+              <span class="giosg-icon giosg-api"></span>
+              <span class="mls"> giosg-api</span>
+          </div>
+          <div class="col-md-4">
+              <span class="giosg-icon giosg-condition"></span>
+              <span class="mls"> giosg-condition</span>
+          </div>
+          <div class="col-md-4">
+              <span class="giosg-icon giosg-goal"></span>
+              <span class="mls"> giosg-goal</span>
+          </div>
+          <div class="col-md-4">
+              <span class="giosg-icon giosg-lock"></span>
+              <span class="mls"> giosg-lock</span>
+          </div>
+          <div class="col-md-4">
+              <span class="giosg-icon giosg-markup"></span>
+              <span class="mls"> giosg-markup</span>
+          </div>
+          <div class="col-md-4">
+              <span class="giosg-icon giosg-network"></span>
+              <span class="mls"> giosg-network</span>
+          </div>
+          <div class="col-md-4">
+              <span class="giosg-icon giosg-panel"></span>
+              <span class="mls"> giosg-panel</span>
+          </div>
+          <div class="col-md-4">
+              <span class="giosg-icon giosg-room"></span>
+              <span class="mls"> giosg-room</span>
+          </div>
+          <div class="col-md-4">
+              <span class="giosg-icon giosg-screen"></span>
+              <span class="mls"> giosg-screen</span>
+          </div>
+          <div class="col-md-4">
+              <span class="giosg-icon giosg-settings"></span>
+              <span class="mls"> giosg-settings</span>
+          </div>
+          <div class="col-md-4">
+              <span class="giosg-icon giosg-swimlane"></span>
+              <span class="mls"> giosg-swimlane</span>
+          </div>
+          <div class="col-md-4">
+              <span class="giosg-icon giosg-target"></span>
+              <span class="mls"> giosg-target</span>
+          </div>
+          <div class="col-md-4">
+              <span class="giosg-icon giosg-tree"></span>
+              <span class="mls"> giosg-tree</span>
+          </div>
+          <div class="col-md-4">
+              <span class="giosg-icon giosg-users"></span>
+              <span class="mls"> giosg-users</span>
+          </div>
+        </div>
+
+        <h1>Background colors</h1>
+          Can use these to set background color for any element
+
+          <div style="padding: 25px" class="bg-purple"><code>bg-purple</code></div>
+          <div style="padding: 25px" class="bg-green"><code>bg-green</code></div>
+          <div style="padding: 25px" class="bg-dark-green"><code>bg-dark-green</code></div>
+          <div style="padding: 25px" class="bg-blue"><code>bg-blue</code></div>
+          <div style="padding: 25px" class="bg-light-blue"><code>bg-light-blue</code></div>
+          <div style="padding: 25px" class="bg-violet"><code>bg-violet</code></div>
+          <div style="padding: 25px" class="bg-dark"><code>bg-dark</code></div>
+          <div style="padding: 25px" class="bg-light-grey"><code>bg-light-grey</code></div>
+
+        <h1>Panels</h1>
+
+        <div class="row">
+
+          <div class="col-md-6">
+            <div class="panel panel-purple">
+              <div class="panel-heading">
+                <i class="fa fa-fw fa-flag"></i>
+                <span>Panel heading</span>
+                <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="panel-body">
+                <code>.panel .panel-purple</code>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="panel panel-green">
+              <div class="panel-heading">
+                <i class="fa fa-fw fa-flag"></i>
+                <span>Panel heading</span>
+                <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="panel-body">
+                <code>.panel .panel-green</code>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="panel panel-dark-green">
+              <div class="panel-heading">
+                <i class="fa fa-fw fa-flag"></i>
+                <span>Panel heading</span>
+                <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="panel-body">
+                <code>.panel .panel-dark-green</code>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="panel panel-blue">
+              <div class="panel-heading">
+                <i class="fa fa-fw fa-flag"></i>
+                <span>Panel heading</span>
+                <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="panel-body">
+                <code>.panel .panel-blue</code>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="panel panel-light-blue">
+              <div class="panel-heading">
+                <i class="fa fa-fw fa-flag"></i>
+                <span>Panel heading</span>
+                <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="panel-body">
+                <code>.panel .panel-light-blue</code>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="panel panel-violet">
+              <div class="panel-heading">
+                <i class="fa fa-fw fa-flag"></i>
+                <span>Panel heading</span>
+                <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="panel-body">
+                <code>.panel .panel-violet</code>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="panel panel-dark">
+              <div class="panel-heading">
+                <i class="fa fa-fw fa-flag"></i>
+                <span>Panel heading</span>
+                <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="panel-body">
+                <code>.panel .panel-dark</code>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="panel panel-light-grey">
+              <div class="panel-heading">
+                <i class="fa fa-fw fa-flag"></i>
+                <span>Panel heading</span>
+                <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="panel-body">
+                <code>.panel .panel-light-grey</code>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <h1>Buttons</h1>
+        <p>These come support default bootstrap classes</p>
+
+        <h2> Normal buttons</h2>
+        <p>
+          <code>.btn-block</code>
+          <code>.btn-lg</code>
+          <code>.btn-sm</code>
+          <code>.btn-xs</code>
+        </p>
+
+        <div style="padding: 5px 0">
+          <button class="btn btn-purple btn-lg"><i class="fa fa-check"></i> .btn-purple</button>
+          <button class="btn btn-purple"><i class="fa fa-check"></i> .btn-purple</button>
+          <button class="btn btn-purple btn-sm"><i class="fa fa-check"></i> .btn-purple</button>
+          <button class="btn btn-purple btn-xs"><i class="fa fa-check"></i> .btn-purple</button>
+        </div>
+
+        <div style="padding: 5px 0">
+          <button class="btn btn-green btn-lg"><i class="fa fa-check"></i> .btn-green</button>
+          <button class="btn btn-green"><i class="fa fa-check"></i> .btn-green</button>
+          <button class="btn btn-green btn-sm"><i class="fa fa-check"></i> .btn-green</button>
+          <button class="btn btn-green btn-xs"><i class="fa fa-check"></i> .btn-green</button>
+        </div>
+
+        <div style="padding: 5px 0">
+          <button class="btn btn-dark-green btn-lg"><i class="fa fa-check"></i> .btn-dark-green</button>
+          <button class="btn btn-dark-green"><i class="fa fa-check"></i> .btn-dark-green</button>
+          <button class="btn btn-dark-green btn-sm"><i class="fa fa-check"></i> .btn-dark-green</button>
+          <button class="btn btn-dark-green btn-xs"><i class="fa fa-check"></i> .btn-dark-green</button>
+        </div>
+
+        <div style="padding: 5px 0">
+          <button class="btn btn-blue btn-lg"><i class="fa fa-check"></i> .btn-blue</button>
+          <button class="btn btn-blue"><i class="fa fa-check"></i> .btn-blue</button>
+          <button class="btn btn-blue btn-sm"><i class="fa fa-check"></i> .btn-blue</button>
+          <button class="btn btn-blue btn-xs"><i class="fa fa-check"></i> .btn-blue</button>
+        </div>
+
+        <div style="padding: 5px 0">
+          <button class="btn btn-light-blue btn-lg"><i class="fa fa-check"></i> .btn-light-blue</button>
+          <button class="btn btn-light-blue"><i class="fa fa-check"></i> .btn-light-blue</button>
+          <button class="btn btn-light-blue btn-sm"><i class="fa fa-check"></i> .btn-light-blue</button>
+          <button class="btn btn-light-blue btn-xs"><i class="fa fa-check"></i> .btn-light-blue</button>
+        </div>
+
+        <div style="padding: 5px 0">
+          <button class="btn btn-violet btn-lg"><i class="fa fa-check"></i> .btn-violet</button>
+          <button class="btn btn-violet"><i class="fa fa-check"></i> .btn-violet</button>
+          <button class="btn btn-violet btn-sm"><i class="fa fa-check"></i> .btn-violet</button>
+          <button class="btn btn-violet btn-xs"><i class="fa fa-check"></i> .btn-violet</button>
+        </div>
+
+        <div style="padding: 5px 0">
+          <button class="btn btn-dark btn-lg"><i class="fa fa-check"></i> .btn-dark</button>
+          <button class="btn btn-dark"><i class="fa fa-check"></i> .btn-dark</button>
+          <button class="btn btn-dark btn-sm"><i class="fa fa-check"></i> .btn-dark</button>
+          <button class="btn btn-dark btn-xs"><i class="fa fa-check"></i> .btn-dark</button>
+        </div>
+
+        <div style="padding: 5px 0">
+          <button class="btn btn-light-grey btn-lg"><i class="fa fa-check"></i> .btn-light-grey</button>
+          <button class="btn btn-light-grey"><i class="fa fa-check"></i> .btn-light-grey</button>
+          <button class="btn btn-light-grey btn-sm"><i class="fa fa-check"></i> .btn-light-grey</button>
+          <button class="btn btn-light-grey btn-xs"><i class="fa fa-check"></i> .btn-light-grey</button>
+        </div>
+
+
+        <h2>Inverted button colors</h2>
+        <p>
+          Just combine <code>.btn-round</code> with <code>.btn-[color]-inverse</code>
+        </p>
+
+        <div style="padding: 5px 0">
+          <button class="btn btn-purple-inverse btn-lg"><i class="fa fa-check"></i> .btn-purple-inverse</button>
+          <button class="btn btn-purple-inverse"><i class="fa fa-check"></i> .btn-purple-inverse</button>
+          <button class="btn btn-purple-inverse btn-sm"><i class="fa fa-check"></i> .btn-purple-inverse</button>
+          <button class="btn btn-purple-inverse btn-xs"><i class="fa fa-check"></i> .btn-purple-inverse</button>
+        </div>
+
+        <div style="padding: 5px 0">
+          <button class="btn btn-green-inverse btn-lg"><i class="fa fa-check"></i> .btn-green-inverse</button>
+          <button class="btn btn-green-inverse"><i class="fa fa-check"></i> .btn-green-inverse</button>
+          <button class="btn btn-green-inverse btn-sm"><i class="fa fa-check"></i> .btn-green-inverse</button>
+          <button class="btn btn-green-inverse btn-xs"><i class="fa fa-check"></i> .btn-green-inverse</button>
+        </div>
+
+        <div style="padding: 5px 0">
+          <button class="btn btn-dark-green-inverse btn-lg"><i class="fa fa-check"></i> .btn-dark-green-inverse</button>
+          <button class="btn btn-dark-green-inverse"><i class="fa fa-check"></i> .btn-dark-green-inverse</button>
+          <button class="btn btn-dark-green-inverse btn-sm"><i class="fa fa-check"></i> .btn-dark-green-inverse</button>
+          <button class="btn btn-dark-green-inverse btn-xs"><i class="fa fa-check"></i> .btn-dark-green-inverse</button>
+        </div>
+
+        <div style="padding: 5px 0">
+          <button class="btn btn-blue-inverse btn-lg"><i class="fa fa-check"></i> .btn-blue-inverse</button>
+          <button class="btn btn-blue-inverse"><i class="fa fa-check"></i> .btn-blue-inverse</button>
+          <button class="btn btn-blue-inverse btn-sm"><i class="fa fa-check"></i> .btn-blue-inverse</button>
+          <button class="btn btn-blue-inverse btn-xs"><i class="fa fa-check"></i> .btn-blue-inverse</button>
+        </div>
+
+        <div style="padding: 5px 0">
+          <button class="btn btn-light-blue-inverse btn-lg"><i class="fa fa-check"></i> .btn-light-blue-inverse</button>
+          <button class="btn btn-light-blue-inverse"><i class="fa fa-check"></i> .btn-light-blue-inverse</button>
+          <button class="btn btn-light-blue-inverse btn-sm"><i class="fa fa-check"></i> .btn-light-blue-inverse</button>
+          <button class="btn btn-light-blue-inverse btn-xs"><i class="fa fa-check"></i> .btn-light-blue-inverse</button>
+        </div>
+
+        <div style="padding: 5px 0">
+          <button class="btn btn-violet-inverse btn-lg"><i class="fa fa-check"></i> .btn-violet-inverse</button>
+          <button class="btn btn-violet-inverse"><i class="fa fa-check"></i> .btn-violet-inverse</button>
+          <button class="btn btn-violet-inverse btn-sm"><i class="fa fa-check"></i> .btn-violet-inverse</button>
+          <button class="btn btn-violet-inverse btn-xs"><i class="fa fa-check"></i> .btn-violet-inverse</button>
+        </div>
+
+        <div style="padding: 5px 0">
+          <button class="btn btn-dark-inverse btn-lg"><i class="fa fa-check"></i> .btn-dark-inverse</button>
+          <button class="btn btn-dark-inverse"><i class="fa fa-check"></i> .btn-dark-inverse</button>
+          <button class="btn btn-dark-inverse btn-sm"><i class="fa fa-check"></i> .btn-dark-inverse</button>
+          <button class="btn btn-dark-inverse btn-xs"><i class="fa fa-check"></i> .btn-dark-inverse</button>
+        </div>
+
+        <div style="padding: 5px 0">
+          <button class="btn btn-light-grey-inverse btn-lg"><i class="fa fa-check"></i> .btn-light-grey-inverse</button>
+          <button class="btn btn-light-grey-inverse"><i class="fa fa-check"></i> .btn-light-grey-inverse</button>
+          <button class="btn btn-light-grey-inverse btn-sm"><i class="fa fa-check"></i> .btn-light-grey-inverse</button>
+          <button class="btn btn-light-grey-inverse btn-xs"><i class="fa fa-check"></i> .btn-light-grey-inverse</button>
+        </div>
+
+
+        <h2> Round buttons</h2>
+        <p>Just add <code>.btn-round</code></p>
+
+        <div style="padding: 5px 0">
+          <button class="btn btn-round btn-purple btn-lg"><i class="fa fa-check"></i> .btn-purple</button>
+          <button class="btn btn-round btn-purple"><i class="fa fa-check"></i> .btn-purple</button>
+          <button class="btn btn-round btn-purple btn-sm"><i class="fa fa-check"></i> .btn-purple</button>
+          <button class="btn btn-round btn-purple btn-xs"><i class="fa fa-check"></i> .btn-purple</button>
+        </div>
+
+        <div style="padding: 5px 0">
+          <button class="btn btn-round btn-green btn-lg"><i class="fa fa-check"></i> .btn-green</button>
+          <button class="btn btn-round btn-green"><i class="fa fa-check"></i> .btn-green</button>
+          <button class="btn btn-round btn-green btn-sm"><i class="fa fa-check"></i> .btn-green</button>
+          <button class="btn btn-round btn-green btn-xs"><i class="fa fa-check"></i> .btn-green</button>
+        </div>
+
+        <div style="padding: 5px 0">
+          <button class="btn btn-round btn-dark-green btn-lg"><i class="fa fa-check"></i> .btn-dark-green</button>
+          <button class="btn btn-round btn-dark-green"><i class="fa fa-check"></i> .btn-dark-green</button>
+          <button class="btn btn-round btn-dark-green btn-sm"><i class="fa fa-check"></i> .btn-dark-green</button>
+          <button class="btn btn-round btn-dark-green btn-xs"><i class="fa fa-check"></i> .btn-dark-green</button>
+        </div>
+
+        <div style="padding: 5px 0">
+          <button class="btn btn-round btn-blue btn-lg"><i class="fa fa-check"></i> .btn-blue</button>
+          <button class="btn btn-round btn-blue"><i class="fa fa-check"></i> .btn-blue</button>
+          <button class="btn btn-round btn-blue btn-sm"><i class="fa fa-check"></i> .btn-blue</button>
+          <button class="btn btn-round btn-blue btn-xs"><i class="fa fa-check"></i> .btn-blue</button>
+        </div>
+
+        <div style="padding: 5px 0">
+          <button class="btn btn-round btn-light-blue btn-lg"><i class="fa fa-check"></i> .btn-light-blue</button>
+          <button class="btn btn-round btn-light-blue"><i class="fa fa-check"></i> .btn-light-blue</button>
+          <button class="btn btn-round btn-light-blue btn-sm"><i class="fa fa-check"></i> .btn-light-blue</button>
+          <button class="btn btn-round btn-light-blue btn-xs"><i class="fa fa-check"></i> .btn-light-blue</button>
+        </div>
+
+        <div style="padding: 5px 0">
+          <button class="btn btn-round btn-violet btn-lg"><i class="fa fa-check"></i> .btn-violet</button>
+          <button class="btn btn-round btn-violet"><i class="fa fa-check"></i> .btn-violet</button>
+          <button class="btn btn-round btn-violet btn-sm"><i class="fa fa-check"></i> .btn-violet</button>
+          <button class="btn btn-round btn-violet btn-xs"><i class="fa fa-check"></i> .btn-violet</button>
+        </div>
+
+        <div style="padding: 5px 0">
+          <button class="btn btn-round btn-dark btn-lg"><i class="fa fa-check"></i> .btn-dark</button>
+          <button class="btn btn-round btn-dark"><i class="fa fa-check"></i> .btn-dark</button>
+          <button class="btn btn-round btn-dark btn-sm"><i class="fa fa-check"></i> .btn-dark</button>
+          <button class="btn btn-round btn-dark btn-xs"><i class="fa fa-check"></i> .btn-dark</button>
+        </div>
+
+        <div style="padding: 5px 0">
+          <button class="btn btn-round btn-light-grey btn-lg"><i class="fa fa-check"></i> .btn-light-grey</button>
+          <button class="btn btn-round btn-light-grey"><i class="fa fa-check"></i> .btn-light-grey</button>
+          <button class="btn btn-round btn-light-grey btn-sm"><i class="fa fa-check"></i> .btn-light-grey</button>
+          <button class="btn btn-round btn-light-grey btn-xs"><i class="fa fa-check"></i> .btn-light-grey</button>
+        </div>
+
+
+        <h2>Inverted rounded buttons</h2>
+        <p>
+          Just combine <code>.btn-round</code> with <code>.btn-[color]-inverse</code>
+        </p>
+
+        <div style="padding: 5px 0">
+          <button class="btn btn-round btn-purple-inverse btn-lg"><i class="fa fa-check"></i> .btn-purple-inverse</button>
+          <button class="btn btn-round btn-purple-inverse"><i class="fa fa-check"></i> .btn-purple-inverse</button>
+          <button class="btn btn-round btn-purple-inverse btn-sm"><i class="fa fa-check"></i> .btn-purple-inverse</button>
+          <button class="btn btn-round btn-purple-inverse btn-xs"><i class="fa fa-check"></i> .btn-purple-inverse</button>
+        </div>
+
+        <div style="padding: 5px 0">
+          <button class="btn btn-round btn-green-inverse btn-lg"><i class="fa fa-check"></i> .btn-green-inverse</button>
+          <button class="btn btn-round btn-green-inverse"><i class="fa fa-check"></i> .btn-green-inverse</button>
+          <button class="btn btn-round btn-green-inverse btn-sm"><i class="fa fa-check"></i> .btn-green-inverse</button>
+          <button class="btn btn-round btn-green-inverse btn-xs"><i class="fa fa-check"></i> .btn-green-inverse</button>
+        </div>
+
+        <div style="padding: 5px 0">
+          <button class="btn btn-round btn-dark-green-inverse btn-lg"><i class="fa fa-check"></i> .btn-dark-green-inverse</button>
+          <button class="btn btn-round btn-dark-green-inverse"><i class="fa fa-check"></i> .btn-dark-green-inverse</button>
+          <button class="btn btn-round btn-dark-green-inverse btn-sm"><i class="fa fa-check"></i> .btn-dark-green-inverse</button>
+          <button class="btn btn-round btn-dark-green-inverse btn-xs"><i class="fa fa-check"></i> .btn-dark-green-inverse</button>
+        </div>
+
+        <div style="padding: 5px 0">
+          <button class="btn btn-round btn-blue-inverse btn-lg"><i class="fa fa-check"></i> .btn-blue-inverse</button>
+          <button class="btn btn-round btn-blue-inverse"><i class="fa fa-check"></i> .btn-blue-inverse</button>
+          <button class="btn btn-round btn-blue-inverse btn-sm"><i class="fa fa-check"></i> .btn-blue-inverse</button>
+          <button class="btn btn-round btn-blue-inverse btn-xs"><i class="fa fa-check"></i> .btn-blue-inverse</button>
+        </div>
+
+        <div style="padding: 5px 0">
+          <button class="btn btn-round btn-light-blue-inverse btn-lg"><i class="fa fa-check"></i> .btn-light-blue-inverse</button>
+          <button class="btn btn-round btn-light-blue-inverse"><i class="fa fa-check"></i> .btn-light-blue-inverse</button>
+          <button class="btn btn-round btn-light-blue-inverse btn-sm"><i class="fa fa-check"></i> .btn-light-blue-inverse</button>
+          <button class="btn btn-round btn-light-blue-inverse btn-xs"><i class="fa fa-check"></i> .btn-light-blue-inverse</button>
+        </div>
+
+        <div style="padding: 5px 0">
+          <button class="btn btn-round btn-violet-inverse btn-lg"><i class="fa fa-check"></i> .btn-violet-inverse</button>
+          <button class="btn btn-round btn-violet-inverse"><i class="fa fa-check"></i> .btn-violet-inverse</button>
+          <button class="btn btn-round btn-violet-inverse btn-sm"><i class="fa fa-check"></i> .btn-violet-inverse</button>
+          <button class="btn btn-round btn-violet-inverse btn-xs"><i class="fa fa-check"></i> .btn-violet-inverse</button>
+        </div>
+
+        <div style="padding: 5px 0">
+          <button class="btn btn-round btn-dark-inverse btn-lg"><i class="fa fa-check"></i> .btn-dark-inverse</button>
+          <button class="btn btn-round btn-dark-inverse"><i class="fa fa-check"></i> .btn-dark-inverse</button>
+          <button class="btn btn-round btn-dark-inverse btn-sm"><i class="fa fa-check"></i> .btn-dark-inverse</button>
+          <button class="btn btn-round btn-dark-inverse btn-xs"><i class="fa fa-check"></i> .btn-dark-inverse</button>
+        </div>
+
+        <div style="padding: 5px 0">
+          <button class="btn btn-round btn-light-grey-inverse btn-lg"><i class="fa fa-check"></i> .btn-light-grey-inverse</button>
+          <button class="btn btn-round btn-light-grey-inverse"><i class="fa fa-check"></i> .btn-light-grey-inverse</button>
+          <button class="btn btn-round btn-light-grey-inverse btn-sm"><i class="fa fa-check"></i> .btn-light-grey-inverse</button>
+          <button class="btn btn-round btn-light-grey-inverse btn-xs"><i class="fa fa-check"></i> .btn-light-grey-inverse</button>
+        </div>
+
+
+
+        <h1> Text colors</h2>
+        <p>
+          These work just like bootstrap text colors, just add the class to any element
+        </p>
+        <div style="background: #fff; padding: 15px">
+
+          <h3>giosg-text-purple</h2>
+          <div class="text-purple">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra faucibus volutpat. Quisque at orci turpis. Ut tortor nunc, interdum ac justo et, volutpat commodo ex. Fusce maximus hendrerit nunc non scelerisque.
+          </div>
+
+          <h3>giosg-text-green</h2>
+          <div class="text-green">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra faucibus volutpat. Quisque at orci turpis. Ut tortor nunc, interdum ac justo et, volutpat commodo ex. Fusce maximus hendrerit nunc non scelerisque.
+          </div>
+
+          <h3>giosg-text-dark-green</h2>
+          <div class="text-dark-green">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra faucibus volutpat. Quisque at orci turpis. Ut tortor nunc, interdum ac justo et, volutpat commodo ex. Fusce maximus hendrerit nunc non scelerisque.
+          </div>
+
+          <h3>giosg-text-blue</h2>
+          <div class="text-blue">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra faucibus volutpat. Quisque at orci turpis. Ut tortor nunc, interdum ac justo et, volutpat commodo ex. Fusce maximus hendrerit nunc non scelerisque.
+          </div>
+
+          <h3>giosg-text-light-blue</h2>
+          <div class="text-light-blue">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra faucibus volutpat. Quisque at orci turpis. Ut tortor nunc, interdum ac justo et, volutpat commodo ex. Fusce maximus hendrerit nunc non scelerisque.
+          </div>
+
+          <h3>giosg-text-violet</h2>
+          <div class="text-violet">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra faucibus volutpat. Quisque at orci turpis. Ut tortor nunc, interdum ac justo et, volutpat commodo ex. Fusce maximus hendrerit nunc non scelerisque.
+          </div>
+
+          <h3>giosg-text-dark</h2>
+          <div class="text-dark">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra faucibus volutpat. Quisque at orci turpis. Ut tortor nunc, interdum ac justo et, volutpat commodo ex. Fusce maximus hendrerit nunc non scelerisque.
+          </div>
+
+          <h3>giosg-text-light-grey</h2>
+          <div class="text-light-grey">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra faucibus volutpat. Quisque at orci turpis. Ut tortor nunc, interdum ac justo et, volutpat commodo ex. Fusce maximus hendrerit nunc non scelerisque.
+          </div>
+
+        </div>
+
+        <h1>Labels</h1>
+
+        <span class="label label-purple">.label-purple</span>
+        <span class="label label-green">.label-green</span>
+        <span class="label label-dark-green">.label-dark-green</span>
+        <span class="label label-blue">.label-blue</span>
+        <span class="label label-light-blue">.label-light-blue</span>
+        <span class="label label-violet">.label-violet</span>
+        <span class="label label-dark">.label-dark</span>
+        <span class="label label-light-grey">.label-light-grey</span>
+
+
+        <h2>Round labels</h2>
+        <p>Just add <code>.label-round</code></p>
+
+        <span class="label label-purple label-round">label-purple</span>
+        <span class="label label-green label-round">label-green</span>
+        <span class="label label-dark-green label-round">label-dark-green</span>
+        <span class="label label-blue label-round">label-blue</span>
+        <span class="label label-light-blue label-round">label-light-blue</span>
+        <span class="label label-violet label-round">label-violet</span>
+        <span class="label label-dark label-round">label-dark</span>
+        <span class="label label-light-grey label-round">label-light-grey</span>
+
+
+        <h1>Inline inputs</h1>
+
+        <div class="row bg-dark" style="color: #fff; padding: 15px">
+          <div class="col-md-12">
+            <i class="fa fa-pencil"></i>
+            <input type="text" class="input-inline-edit" placeholder="edit me"></input>
+          </div>
+          <div class="col-md-12" style="font-size: 2em">
+            <i class="fa fa-pencil"></i>
+            <input type="text" class="input-inline-edit" placeholder="edit me"></input>
+          </div>
+        </div>
+
+        <div class="row" style="padding: 15px">
+          <div class="col-md-12">
+            <i class="fa fa-pencil"></i>
+            <input type="text" class="input-inline-edit" placeholder="edit me"></input>
+          </div>
+          <div class="col-md-12" style="font-size: 2em">
+            <i class="fa fa-pencil"></i>
+            <input type="text" class="input-inline-edit" placeholder="edit me"></input>
+          </div>
+        </div>
+
+        <div class="row bg-purple" style="padding: 15px; color: #fff">
+          <div class="col-md-12">
+            <i class="fa fa-pencil"></i>
+            <input type="text" class="input-inline-edit" placeholder="edit me"></input>
+          </div>
+          <div class="col-md-12" style="font-size: 2em">
+            <i class="fa fa-pencil"></i>
+            <input type="text" class="input-inline-edit" placeholder="edit me"></input>
+          </div>
+        </div>
+
+      </div>
+    </body>
+</html>

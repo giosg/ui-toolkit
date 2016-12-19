@@ -1,0 +1,241 @@
+@import "mixins";
+// Override font path so they can be found
+$icomoon-font-path: "../icons/fonts";
+
+@import "../icons/style.scss";
+
+// Common colors for all elements
+$giosg-purple: #e63086;
+$giosg-green: #69d98a;
+$giosg-dark-green: #00b290;
+$giosg-blue: #258ae5;
+$giosg-light-blue: #27b6ef;
+$giosg-violet: #da64f0;
+$giosg-dark: #2c3544;
+$giosg-light-grey: #c7dde2;
+$giosg-white: #fff;
+
+// Background gradient colors
+$giosg-page-bg-start: #d4e6ee;
+$giosg-page-bg-end: #eff4f6;
+
+// Text colors
+$giosg-light-text: #fff;
+$giosg-dark-text: #2c3544;
+$giosg-text-color: #6a7484;
+
+// Gradient backgrounds for pages
+.bg-page-background {
+  @include linear-gradient(to top, $giosg-page-bg-start, $giosg-page-bg-end);
+}
+
+// All our own styles expect to be inside an element with class "giosg"
+// This is done to avoid collision with styles from flatify
+.giosg {
+  //font-weight: 100;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  color: $giosg-text-color;
+  //
+  // Backgrounds
+  //
+  @include bg-variant('.bg-purple',  $giosg-purple);
+  @include bg-variant('.bg-green', $giosg-green);
+  @include bg-variant('.bg-dark-green', $giosg-dark-green);
+  @include bg-variant('.bg-blue', $giosg-blue);
+  @include bg-variant('.bg-light-blue', $giosg-light-blue);
+  @include bg-variant('.bg-violet', $giosg-violet);
+  @include bg-variant('.bg-dark', $giosg-dark);
+  @include bg-variant('.bg-light-grey', $giosg-light-grey);
+  @include bg-variant('.bg-white', $giosg-white);
+
+  // Use light text by default with dark background
+  .bg-dark {
+    color: $giosg-light-text;
+  }
+
+
+  //
+  // Panels
+  //
+  .panel-purple {
+    @include giosg-panel-variant($giosg-light-text, $giosg-purple, $giosg-text-color);
+  }
+  .panel-green {
+    @include giosg-panel-variant($giosg-light-text, $giosg-green, $giosg-text-color);
+  }
+  .panel-dark-green {
+    @include giosg-panel-variant($giosg-light-text, $giosg-dark-green, $giosg-text-color);
+  }
+  .panel-blue {
+    @include giosg-panel-variant($giosg-light-text, $giosg-blue, $giosg-text-color);
+  }
+  .panel-light-blue {
+    @include giosg-panel-variant($giosg-light-text, $giosg-light-blue, $giosg-text-color);
+  }
+  .panel-violet {
+    @include giosg-panel-variant($giosg-light-text, $giosg-violet, $giosg-text-color);
+  }
+  .panel-dark {
+    @include giosg-panel-variant($giosg-light-text, $giosg-dark, $giosg-text-color);
+  }
+  .panel-dark {
+    @include giosg-panel-variant($giosg-light-text, $giosg-dark, $giosg-text-color);
+  }
+  .panel-light-grey {
+    @include giosg-panel-variant($giosg-dark-text, $giosg-light-grey, $giosg-text-color);
+  }
+
+  //
+  // Buttons and inverted buttons for each color
+  //
+  .btn-purple {
+    @include button-variant($giosg-light-text, $giosg-purple, $giosg-purple);
+  }
+  .btn-purple-inverse {
+    @include button-variant-inverse($giosg-light-text, $giosg-purple, $giosg-purple);
+  }
+
+  .btn-green {
+    @include button-variant($giosg-light-text, $giosg-green, $giosg-green);
+  }
+  .btn-green-inverse {
+    @include button-variant-inverse($giosg-light-text, $giosg-green, $giosg-green);
+  }
+
+  .btn-dark-green {
+    @include button-variant($giosg-light-text, $giosg-dark-green, $giosg-dark-green);
+  }
+  .btn-dark-green-inverse {
+    @include button-variant-inverse($giosg-light-text, $giosg-dark-green, $giosg-dark-green);
+  }
+
+  .btn-blue {
+    @include button-variant($giosg-light-text, $giosg-blue, $giosg-blue);
+  }
+  .btn-blue-inverse {
+    @include button-variant-inverse($giosg-light-text, $giosg-blue, $giosg-blue);
+  }
+
+  .btn-light-blue {
+    @include button-variant($giosg-light-text, $giosg-light-blue, $giosg-light-blue);
+  }
+  .btn-light-blue-inverse {
+    @include button-variant-inverse($giosg-light-text, $giosg-light-blue, $giosg-light-blue);
+  }
+
+  .btn-violet {
+    @include button-variant($giosg-light-text, $giosg-violet, $giosg-violet);
+  }
+  .btn-violet-inverse {
+    @include button-variant-inverse($giosg-light-text, $giosg-violet, $giosg-violet);
+  }
+
+  .btn-dark {
+    @include button-variant($giosg-light-text, $giosg-dark, $giosg-dark);
+  }
+  .btn-dark-inverse {
+    @include button-variant-inverse($giosg-light-text, $giosg-dark, $giosg-dark);
+  }
+
+  .btn-light-grey {
+    @include button-variant($giosg-dark-text, $giosg-light-grey, $giosg-light-grey);
+  }
+  .btn-light-grey-inverse {
+    @include button-variant-inverse($giosg-dark-text, $giosg-light-grey, $giosg-light-grey);
+  }
+
+  //
+  // Round button and label mixin that can be used for buttons and labels
+  //
+  .btn-round, .label-round {
+    @include prefixer(border-top-left-radius, 50px, webkit moz spec);
+    @include prefixer(border-top-right-radius, 50px, webkit moz spec);
+    @include prefixer(border-bottom-left-radius, 50px, webkit moz spec);
+    @include prefixer(border-bottom-right-radius, 50px, webkit moz spec);
+  }
+
+  .btn-lg {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .btn {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .btn-sm {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .btn-xs {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  //
+  // Text colors
+  //
+  @include text-emphasis-variant('.text-purple', $giosg-purple);
+  @include text-emphasis-variant('.text-purple',  $giosg-purple);
+  @include text-emphasis-variant('.text-green', $giosg-green);
+  @include text-emphasis-variant('.text-dark-green', $giosg-dark-green);
+  @include text-emphasis-variant('.text-blue', $giosg-blue);
+  @include text-emphasis-variant('.text-light-blue', $giosg-light-blue);
+  @include text-emphasis-variant('.text-violet', $giosg-violet);
+  @include text-emphasis-variant('.text-dark', $giosg-dark);
+  @include text-emphasis-variant('.text-light-grey', $giosg-light-grey);
+
+  //
+  // Labels
+  //
+  .label-purple {
+    @include label-variant($giosg-purple);
+  }
+  .label-green {
+    @include label-variant($giosg-green);
+  }
+  .label-dark-green {
+    @include label-variant($giosg-dark-green);
+  }
+  .label-blue {
+    @include label-variant($giosg-blue);
+  }
+  .label-light-blue {
+    @include label-variant($giosg-light-blue);
+  }
+  .label-violet {
+    @include label-variant($giosg-violet);
+  }
+  .label-dark {
+    @include label-variant($giosg-dark);
+  }
+  .label-light-grey {
+    @include label-variant($giosg-light-grey);
+  }
+
+  input.input-inline-edit {
+    // Eliminate borders and padding
+    border: none;
+    padding: 0;
+    margin: 0;
+
+    // Inherit the parent element's typography
+    font: inherit;
+    color: inherit;
+    line-height: inherit;
+    font-size: inherit;
+    text-align: inherit;
+    background: inherit;
+    vertical-align: top;
+
+    &:hover, &:focus{
+      // Hide focus outlines
+      outline: none;
+    }
+
+    @include placeholder {
+      // Use bourbons placeholder for the mixins
+      color: inherit;
+      opacity: 0.5;
+    }
+  }
+}

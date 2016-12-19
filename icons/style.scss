@@ -1,0 +1,128 @@
+@import "variables";
+
+@font-face {
+  font-family: 'giosg-icons';
+  src:
+    url('#{$icomoon-font-path}/giosg-icons.ttf?b4hfni') format('truetype'),
+    url('#{$icomoon-font-path}/giosg-icons.woff?b4hfni') format('woff'),
+    url('#{$icomoon-font-path}/giosg-icons.svg?b4hfni#giosg-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.giosg-icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'giosg-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.giosg-condition-circle {
+  &:before {
+    content: $giosg-condition-circle;
+  }
+}
+.giosg-goal-circle {
+  &:before {
+    content: $giosg-goal-circle;
+  }
+}
+.giosg-room-circle {
+  &:before {
+    content: $giosg-room-circle;
+  }
+}
+.giosg-target-circle {
+  &:before {
+    content: $giosg-target-circle;
+  }
+}
+.giosg-api {
+  &:before {
+    content: $giosg-api;
+  }
+}
+.giosg-lock {
+  &:before {
+    content: $giosg-lock;
+  }
+}
+.giosg-markup {
+  &:before {
+    content: $giosg-markup;
+  }
+}
+.giosg-network {
+  &:before {
+    content: $giosg-network;
+  }
+}
+.giosg-panel {
+  &:before {
+    content: $giosg-panel;
+  }
+}
+.giosg-screen {
+  &:before {
+    content: $giosg-screen;
+  }
+}
+.giosg-settings {
+  &:before {
+    content: $giosg-settings;
+  }
+}
+.giosg-swimlane {
+  &:before {
+    content: $giosg-swimlane;
+  }
+}
+.giosg-target {
+  &:before {
+    content: $giosg-target;
+  }
+}
+.giosg-tree {
+  &:before {
+    content: $giosg-tree;
+  }
+}
+.giosg-users {
+  &:before {
+    content: $giosg-users;
+  }
+}
+.giosg-condition {
+  &:before {
+    content: $giosg-condition;
+  }
+}
+.giosg-globe {
+  &:before {
+    content: $giosg-globe;
+  }
+}
+.giosg-goal {
+  &:before {
+    content: $giosg-goal;
+  }
+}
+.giosg-play {
+  &:before {
+    content: $giosg-play;
+  }
+}
+.giosg-room {
+  &:before {
+    content: $giosg-room;
+  }
+}
+

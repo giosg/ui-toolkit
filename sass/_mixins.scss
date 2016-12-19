@@ -1,0 +1,51 @@
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+@import "node_modules/bourbon/app/assets/stylesheets/bourbon";
+
+
+@mixin giosg-panel-variant($heading-text-color, $heading-bg-color, $panel-text-color) {
+  @include panel-variant(null, $heading-text-color, $heading-bg-color, null);
+
+  border: 0;
+  @include prefixer(border-top-left-radius, 5px, webkit moz spec);
+  @include prefixer(border-top-right-radius, 5px, webkit moz spec);
+  @include prefixer(border-bottom-left-radius, 5px, webkit moz spec);
+  @include prefixer(border-bottom-right-radius, 5px, webkit moz spec);
+
+  .panel-heading {
+    @include prefixer(border-top-left-radius, 5px, webkit moz spec);
+    @include prefixer(border-top-right-radius, 5px, webkit moz spec);
+
+    text-transform: inherit;
+    font-weight: 200;
+
+    > * {
+      vertical-align: middle;
+    }
+
+    .close {
+      color: $heading-text-color;
+      text-shadow: none;
+      opacity: 0.8;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  .panel-body {
+    color: $panel-text-color
+  }
+  .panel-footer {
+    @include prefixer(border-bottom-left-radius, 5px, webkit moz spec);
+    @include prefixer(border-bottom-right-radius, 5px, webkit moz spec);
+  }
+}
+
+@mixin button-variant-inverse($bg-color, $text-color, $border-color) {
+  @include button-variant($text-color, $bg-color, $border-color);
+  border-width: 1px;
+  &:hover {
+    color: darken($text-color, 15%);
+    background: $bg-color;
+  }
+}
