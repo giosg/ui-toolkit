@@ -12,95 +12,118 @@
     </head>
     <body class="giosg bg-page-background">
       <div class="container">
+        <h1>General information</h1>
+        <p>These styles are not applied to everything by default.
+
+          This is a design decision in order to allow styles to rolled out piece by piece
+        </p>
+        <p>
+          You must add css class <code>giosg</code> to an element that contains the part where you want these styles to apply.
+        </p>
+        <p>
+          For example if you want the whole page to use giosg ui-toolkit style then you can just place the class for body i.e.
+          <div class="well">
+            <code>&lt;body class="giosg"&gt;... page content... &lt;body&gt;</code>
+          </div>
+          Or you can just pick parts of the page where you want to apply styles
+          <div class="well">
+            <code>
+              &lt;section &gt;... no ui-toolkit here... &lt;section&gt; </br>
+              &lt;section class="giosg"&gt;... apply styles here... &lt;section&gt;</code>
+          </div>
+        </p>
+
         <h1>Page background</h1>
         <p>To get the same gradient background as this page just add <code>bg-page-background</code> to your container element </p>
+
+        <p>All icons have common baseclass <code>.giosg-icon</code>
         <h1>Icons</h1>
         <div style="font-size: 2em" class="row">
           <div class="col-md-4">
             <span class="giosg-icon giosg-condition-circle"></span>
-            <span class="mls"> giosg-condition-circle</span>
+            <code style="font-size: 0.5em">.giosg-icon..giosg-condition-circle</code>
           </div>
           <div class="col-md-4">
               <span class="giosg-icon giosg-goal-circle"></span>
-              <span class="mls"> giosg-goal-circle</span>
+              <code style="font-size: 0.5em">.giosg-icon .giosg-goal-circle</code>
           </div>
           <div class="col-md-4">
               <span class="giosg-icon giosg-room-circle"></span>
-              <span class="mls"> giosg-room-circle</span>
+              <code style="font-size: 0.5em">.giosg-icon .giosg-room-circle</code>
           </div>
           <div class="col-md-4">
               <span class="giosg-icon giosg-target-circle"></span>
-              <span class="mls"> giosg-target-circle</span>
+              <code style="font-size: 0.5em">.giosg-icon .giosg-target-circle</code>
           </div>
           <div class="col-md-4">
               <span class="giosg-icon giosg-api"></span>
-              <span class="mls"> giosg-api</span>
+              <code style="font-size: 0.5em">.giosg-icon .giosg-api</code>
           </div>
           <div class="col-md-4">
               <span class="giosg-icon giosg-condition"></span>
-              <span class="mls"> giosg-condition</span>
+              <code style="font-size: 0.5em">.giosg-icon .giosg-condition</code>
           </div>
           <div class="col-md-4">
               <span class="giosg-icon giosg-goal"></span>
-              <span class="mls"> giosg-goal</span>
+              <code style="font-size: 0.5em">.giosg-icon .giosg-goal</code>
           </div>
           <div class="col-md-4">
               <span class="giosg-icon giosg-lock"></span>
-              <span class="mls"> giosg-lock</span>
+              <code style="font-size: 0.5em">.giosg-icon .giosg-lock</code>
           </div>
           <div class="col-md-4">
               <span class="giosg-icon giosg-markup"></span>
-              <span class="mls"> giosg-markup</span>
+              <code style="font-size: 0.5em">.giosg-icon .giosg-markup</code>
           </div>
           <div class="col-md-4">
               <span class="giosg-icon giosg-network"></span>
-              <span class="mls"> giosg-network</span>
+              <code style="font-size: 0.5em">.giosg-icon .giosg-network</code>
           </div>
           <div class="col-md-4">
               <span class="giosg-icon giosg-panel"></span>
-              <span class="mls"> giosg-panel</span>
+              <code style="font-size: 0.5em">.giosg-icon .giosg-panel</code>
           </div>
           <div class="col-md-4">
               <span class="giosg-icon giosg-room"></span>
-              <span class="mls"> giosg-room</span>
+              <code style="font-size: 0.5em">.giosg-icon .giosg-room</code>
           </div>
           <div class="col-md-4">
               <span class="giosg-icon giosg-screen"></span>
-              <span class="mls"> giosg-screen</span>
+              <code style="font-size: 0.5em">.giosg-icon .giosg-screen</code>
           </div>
           <div class="col-md-4">
               <span class="giosg-icon giosg-settings"></span>
-              <span class="mls"> giosg-settings</span>
+              <code style="font-size: 0.5em">.giosg-icon .giosg-settings</code>
           </div>
           <div class="col-md-4">
               <span class="giosg-icon giosg-swimlane"></span>
-              <span class="mls"> giosg-swimlane</span>
+              <code style="font-size: 0.5em">.giosg-icon .giosg-swimlane</code>
           </div>
           <div class="col-md-4">
               <span class="giosg-icon giosg-target"></span>
-              <span class="mls"> giosg-target</span>
+              <code style="font-size: 0.5em">.giosg-icon .giosg-target</code>
           </div>
           <div class="col-md-4">
               <span class="giosg-icon giosg-tree"></span>
-              <span class="mls"> giosg-tree</span>
+              <code style="font-size: 0.5em">.giosg-icon .giosg-tree</code>
           </div>
           <div class="col-md-4">
               <span class="giosg-icon giosg-users"></span>
-              <span class="mls"> giosg-users</span>
+              <code style="font-size: 0.5em">.giosg-icon .giosg-users</code>
           </div>
         </div>
 
         <h1>Background colors</h1>
           Can use these to set background color for any element
 
-          <div style="padding: 25px" class="bg-purple"><code>bg-purple</code></div>
-          <div style="padding: 25px" class="bg-green"><code>bg-green</code></div>
-          <div style="padding: 25px" class="bg-dark-green"><code>bg-dark-green</code></div>
-          <div style="padding: 25px" class="bg-blue"><code>bg-blue</code></div>
-          <div style="padding: 25px" class="bg-light-blue"><code>bg-light-blue</code></div>
-          <div style="padding: 25px" class="bg-violet"><code>bg-violet</code></div>
-          <div style="padding: 25px" class="bg-dark"><code>bg-dark</code></div>
-          <div style="padding: 25px" class="bg-light-grey"><code>bg-light-grey</code></div>
+          <div style="padding: 25px" class="bg-purple"><code>.bg-purple</code></div>
+          <div style="padding: 25px" class="bg-green"><code>.bg-green</code></div>
+          <div style="padding: 25px" class="bg-dark-green"><code>.bg-dark-green</code></div>
+          <div style="padding: 25px" class="bg-blue"><code>.bg-blue</code></div>
+          <div style="padding: 25px" class="bg-light-blue"><code>.bg-light-blue</code></div>
+          <div style="padding: 25px" class="bg-violet"><code>.bg-violet</code></div>
+          <div style="padding: 25px" class="bg-dark"><code>.bg-dark</code></div>
+          <div style="padding: 25px" class="bg-light-grey"><code>.bg-light-grey</code></div>
 
         <h1>Panels</h1>
 
@@ -469,48 +492,61 @@
         <p>
           These work just like bootstrap text colors, just add the class to any element
         </p>
-        <div style="background: #fff; padding: 15px">
-
-          <h3>giosg-text-purple</h2>
+        <div style="background: #fff; padding: 15px; margin-top: 15px;">
+          <code>.giosg-text-purple</code>
+          <br />
           <div class="text-purple">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra faucibus volutpat. Quisque at orci turpis. Ut tortor nunc, interdum ac justo et, volutpat commodo ex. Fusce maximus hendrerit nunc non scelerisque.
           </div>
-
-          <h3>giosg-text-green</h2>
+        </div>
+        <div style="background: #fff; padding: 15px; margin-top: 15px;">
+          <code>.giosg-text-green</code>
+          <br />
           <div class="text-green">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra faucibus volutpat. Quisque at orci turpis. Ut tortor nunc, interdum ac justo et, volutpat commodo ex. Fusce maximus hendrerit nunc non scelerisque.
           </div>
-
-          <h3>giosg-text-dark-green</h2>
+        </div>
+        <div style="background: #fff; padding: 15px; margin-top: 15px;">
+          <code>.giosg-text-dark-green</code>
+          <br />
           <div class="text-dark-green">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra faucibus volutpat. Quisque at orci turpis. Ut tortor nunc, interdum ac justo et, volutpat commodo ex. Fusce maximus hendrerit nunc non scelerisque.
           </div>
-
-          <h3>giosg-text-blue</h2>
+        </div>
+        <div style="background: #fff; padding: 15px; margin-top: 15px;">
+          <code>.giosg-text-blue</code>
+          <br />
           <div class="text-blue">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra faucibus volutpat. Quisque at orci turpis. Ut tortor nunc, interdum ac justo et, volutpat commodo ex. Fusce maximus hendrerit nunc non scelerisque.
           </div>
-
-          <h3>giosg-text-light-blue</h2>
+        </div>
+        <div style="background: #fff; padding: 15px; margin-top: 15px;">
+          <code>.giosg-text-light-blue</code>
+          <br />
           <div class="text-light-blue">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra faucibus volutpat. Quisque at orci turpis. Ut tortor nunc, interdum ac justo et, volutpat commodo ex. Fusce maximus hendrerit nunc non scelerisque.
           </div>
-
-          <h3>giosg-text-violet</h2>
+        </div>
+        <div style="background: #fff; padding: 15px; margin-top: 15px;">
+          <code>.giosg-text-violet</code>
+          <br />
           <div class="text-violet">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra faucibus volutpat. Quisque at orci turpis. Ut tortor nunc, interdum ac justo et, volutpat commodo ex. Fusce maximus hendrerit nunc non scelerisque.
           </div>
-
-          <h3>giosg-text-dark</h2>
+        </div>
+        <div style="background: #fff; padding: 15px; margin-top: 15px;">
+          <code>.giosg-text-dark</code>
+          <br />
           <div class="text-dark">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra faucibus volutpat. Quisque at orci turpis. Ut tortor nunc, interdum ac justo et, volutpat commodo ex. Fusce maximus hendrerit nunc non scelerisque.
           </div>
-
-          <h3>giosg-text-light-grey</h2>
+        </div>
+        <div style="background: #fff; padding: 15px; margin-top: 15px;">
+          <code>.giosg-text-light-grey</code>
+          <br />
           <div class="text-light-grey">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra faucibus volutpat. Quisque at orci turpis. Ut tortor nunc, interdum ac justo et, volutpat commodo ex. Fusce maximus hendrerit nunc non scelerisque.
           </div>
-
         </div>
 
         <h1>Labels</h1>
@@ -539,7 +575,7 @@
 
 
         <h1>Inline inputs</h1>
-
+        <p>Just apply class <code>.input-inline-edit</code> to any <code>&lt;input type="text" ...&gt;</code> element
         <div class="row bg-dark" style="color: #fff; padding: 15px">
           <div class="col-md-12">
             <i class="fa fa-pencil"></i>

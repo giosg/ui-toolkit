@@ -13,6 +13,10 @@ ui-toolkit does not work without Boostrap 3 so it needs to be installed separate
 
 ui-toolkit is also somewhat compatible with other Bootstrap extensions like Flatify
 
+### Usage after installing
+
+Just check https://giosg.github.io/ui-toolkit/
+
 ### Folder structure
 - `sass`
     - Sass files for compiling the toolkit
