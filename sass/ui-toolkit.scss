@@ -32,12 +32,14 @@ $giosg-text-color: #6a7484;
 // All our own styles expect to be inside an element with class "giosg"
 // This is done to avoid collision with styles from flatify
 .giosg {
-  //font-weight: 100;
+
   font-family: "Lato", Helvetica, Arial, sans-serif;
   color: $giosg-text-color;
+
   //
   // Backgrounds
   //
+
   @include bg-variant('.bg-purple',  $giosg-purple);
   @include bg-variant('.bg-green', $giosg-green);
   @include bg-variant('.bg-dark-green', $giosg-dark-green);
@@ -57,6 +59,7 @@ $giosg-text-color: #6a7484;
   //
   // Panels
   //
+
   .panel-purple {
     @include giosg-panel-variant($giosg-light-text, $giosg-purple, $giosg-text-color);
   }

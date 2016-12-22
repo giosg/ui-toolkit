@@ -16,7 +16,6 @@
     @include prefixer(border-top-right-radius, 5px, webkit moz spec);
 
     text-transform: inherit;
-    font-weight: 200;
 
     > * {
       vertical-align: middle;
