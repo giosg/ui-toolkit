@@ -91,65 +91,60 @@ $giosg-text-color: #6a7484;
   //
   // Buttons and inverted buttons for each color
   //
+
   .btn-purple {
     @include button-variant($giosg-light-text, $giosg-purple, $giosg-purple);
   }
   .btn-purple-inverse {
-    @include button-variant-inverse($giosg-light-text, $giosg-purple, $giosg-purple);
+    @include button-variant-inverse($giosg-purple, $giosg-purple, $giosg-light-text);
   }
 
   .btn-green {
     @include button-variant($giosg-light-text, $giosg-green, $giosg-green);
   }
   .btn-green-inverse {
-    @include button-variant-inverse($giosg-light-text, $giosg-green, $giosg-green);
+    @include button-variant-inverse($giosg-green, $giosg-green, $giosg-light-text);
   }
 
   .btn-dark-green {
     @include button-variant($giosg-light-text, $giosg-dark-green, $giosg-dark-green);
   }
   .btn-dark-green-inverse {
-    @include button-variant-inverse($giosg-light-text, $giosg-dark-green, $giosg-dark-green);
+    @include button-variant-inverse($giosg-dark-green, $giosg-dark-green, $giosg-light-text, 5%);
   }
 
   .btn-blue {
     @include button-variant($giosg-light-text, $giosg-blue, $giosg-blue);
   }
   .btn-blue-inverse {
-    @include button-variant-inverse($giosg-light-text, $giosg-blue, $giosg-blue);
+    @include button-variant-inverse($giosg-blue, $giosg-blue, $giosg-light-text);
   }
 
   .btn-light-blue {
     @include button-variant($giosg-light-text, $giosg-light-blue, $giosg-light-blue);
   }
   .btn-light-blue-inverse {
-    @include button-variant-inverse($giosg-light-text, $giosg-light-blue, $giosg-light-blue);
+    @include button-variant-inverse($giosg-light-blue, $giosg-light-blue, $giosg-light-text);
   }
 
   .btn-violet {
     @include button-variant($giosg-light-text, $giosg-violet, $giosg-violet);
   }
   .btn-violet-inverse {
-    @include button-variant-inverse($giosg-light-text, $giosg-violet, $giosg-violet);
+    @include button-variant-inverse($giosg-violet, $giosg-violet, $giosg-light-text);
   }
 
   .btn-dark {
     @include button-variant($giosg-light-text, $giosg-dark, $giosg-dark);
   }
   .btn-dark-inverse {
-    @include button-variant-inverse($giosg-light-text, $giosg-dark, $giosg-dark);
-  }
-
-  .btn-light-grey {
-    @include button-variant($giosg-dark-text, $giosg-light-grey, $giosg-light-grey);
-  }
-  .btn-light-grey-inverse {
-    @include button-variant-inverse($giosg-dark-text, $giosg-light-grey, $giosg-light-grey);
+    @include button-variant-inverse($giosg-dark, $giosg-dark, $giosg-light-text);
   }
 
   //
   // Round button and label mixin that can be used for buttons and labels
   //
+
   .btn-round, .label-round {
     @include prefixer(border-top-left-radius, 50px, webkit moz spec);
     @include prefixer(border-top-right-radius, 50px, webkit moz spec);
@@ -177,6 +172,7 @@ $giosg-text-color: #6a7484;
   //
   // Text colors
   //
+
   @include text-emphasis-variant('.text-purple', $giosg-purple);
   @include text-emphasis-variant('.text-purple',  $giosg-purple);
   @include text-emphasis-variant('.text-green', $giosg-green);
@@ -190,6 +186,7 @@ $giosg-text-color: #6a7484;
   //
   // Labels
   //
+
   .label-purple {
     @include label-variant($giosg-purple);
   }

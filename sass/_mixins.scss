@@ -40,11 +40,16 @@
   }
 }
 
-@mixin button-variant-inverse($bg-color, $text-color, $border-color) {
-  @include button-variant($text-color, $bg-color, $border-color);
-  border-width: 1px;
+@mixin button-variant-inverse($background-color, $border-color, $text-color, $hover-lightness: 10%) {
+  // Create a button that has the the colors inverted
+  // This means that text-color is actually the background color and vice verca
+  @include button-variant(darken($background-color, 20%), $text-color, $border-color);
+
+  border-width: 0px;
+
+  // Then override the hover behaviour
   &:hover {
-    color: darken($text-color, 15%);
-    background: $bg-color;
+    color: $text-color;
+    background: lighten($background-color, $hover-lightness);
   }
 }
