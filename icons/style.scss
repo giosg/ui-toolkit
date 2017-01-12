@@ -3,9 +3,9 @@
 @font-face {
   font-family: 'giosg-icons';
   src:
-    url('#{$icomoon-font-path}/giosg-icons.ttf?152en') format('truetype'),
-    url('#{$icomoon-font-path}/giosg-icons.woff?152en') format('woff'),
-    url('#{$icomoon-font-path}/giosg-icons.svg?152en#giosg-icons') format('svg');
+    url('#{$icomoon-font-path}/giosg-icons.ttf?vzcvd4') format('truetype'),
+    url('#{$icomoon-font-path}/giosg-icons.woff?vzcvd4') format('woff'),
+    url('#{$icomoon-font-path}/giosg-icons.svg?vzcvd4#giosg-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -25,6 +25,26 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.giosg-apps {
+  &:before {
+    content: $giosg-apps;
+  }
+}
+.giosg-canned-answers {
+  &:before {
+    content: $giosg-canned-answers;
+  }
+}
+.giosg-chatbot {
+  &:before {
+    content: $giosg-chatbot;
+  }
+}
+.giosg-basket {
+  &:before {
+    content: $giosg-basket;
+  }
+}
 .giosg-play-circle {
   &:before {
     content: $giosg-play-circle;
