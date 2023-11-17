@@ -13,6 +13,6 @@
   "devDependencies": {
     "bootstrap-sass": "3.3.7",
     "bourbon": "4.2.7",
-    "node-sass": "4.1.0"
+    "node-sass": "9.0.0"
   }
 }
